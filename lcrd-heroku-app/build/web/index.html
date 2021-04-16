@@ -1,11 +1,31 @@
 <!DOCTYPE html>
+
 <html>
+    <head>
+        <title>Heroku  APP</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="WEB-INF/MisEstilos.css" rel="stylesheet" type="text/css"/>
 
-<body>
+    </head>
+ <body>
+        <div><center> <h1>PARCIAL 2: PREGUNTAS Y RESPUESTAS</h1> </center></div>
+        <form >
+            <div>
+            <br><h2>PREGUNTAS</h2></br>
+            <div id="id01"></div>
+           </div>
+         
+            <div id="hide-me">
+                <br><h2>RESPEUSTAS</h2></br>
+                <div id="id02"></div>
+            </div>
+        </form>
 
-<h2>PREGUNTAS</h2>
-<div id="id01"></div>
-<div id="id02"></div>
+
+
+
 
 <script>
 var xmlhttp = new XMLHttpRequest();
@@ -66,6 +86,30 @@ function myFunction2(response2) {
   
     
 }
+
+$('#displayNone').click(function(e) {
+  
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#hide-me').css('visibility', 'visible');
+  
+  if( $('#hide-me').is(":visible") ) {
+    $('#hide-me').css('display', 'none'); 
+  } else {
+    $('#hide-me').css('display', 'block');
+  }
+});
+
+$('#visibilityHidden').click(function(e) {
+  
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#hide-me').css('display', 'block');
+  
+  if( $('#hide-me').css('visibility') != 'hidden' ) {
+    $('#hide-me').css('visibility', 'hidden');
+  } else {
+    $('#hide-me').css('visibility', 'visible');
+  }
+});
 </script>
 
 </body>
