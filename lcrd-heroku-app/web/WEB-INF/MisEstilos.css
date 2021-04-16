@@ -1,0 +1,12 @@
+body{
+    width: 900px;
+    margin: auto;
+    background-color: azure;
+    border: double;
+   
+}
+h1{
+    color: blue;
+    margin: auto;
+    align-self: center;
+}
