@@ -1,5 +1,11 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : index
+    Created on : Apr 15, 2021, 9:21:42 PM
+    Author     : luisg
+--%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Heroku  APP</title>
