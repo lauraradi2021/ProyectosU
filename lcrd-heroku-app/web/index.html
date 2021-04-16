@@ -39,7 +39,7 @@ function myFunction(response) {
 }
 
 var xmlhttp1 = new XMLHttpRequest();
-var url2 ="C:\Users\luisg\OneDrive\Documentos\ProyectosLauraCamila\RespuestasParcial.json";
+var url2 ="http://mavf4unisabana.herokuapp.com/parcial2";
 
 xmlhttp1.onreadystatechange=function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -49,20 +49,20 @@ xmlhttp1.onreadystatechange=function() {
 xmlhttp1.open("GET", url2, true);
 xmlhttp1.send();
 function myFunction2(response2) {
-  var arr = JSON.parse(response2);
-  var i;
-  var out = "<table>";
+  var arr1 = JSON.parse(response2);
+  var i1;
+  var out1 = "<table>";
 
-  for(i = 0; i < arr.length; i++) {
-    out += "<tr><td>" + 
-    arr[i].id +
+  for(i1 = 0; i1 < arr1.length; i1++) {
+    out1 += "<tr><td>" + 
+    arr1[i1].id +
     "</td><td>" +
-    arr[i].question +
+    arr1[i1].question +
     "</td></tr>";
   }
   
-  out += "</table>";
-  document.getElementById("id02").innerHTML = out;
+  out1 += "</table>";
+  document.getElementById("id02").innerHTML = out1;
   
     
 }
