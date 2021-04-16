@@ -24,7 +24,7 @@
            </div>
          
             <div id="hide-me">
-                <br><h2>RESPEUSTAS</h2></br>
+                <br><h2> RESPEUSTAS </h2></br>
                 <div id="id02"></div>
             </div>
         </form>
